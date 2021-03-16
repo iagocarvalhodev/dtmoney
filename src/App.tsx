@@ -1,10 +1,12 @@
 import { Header } from './components/shared/Header'
+import { Dashboard } from './pages/Dashboard';
 import { GlobalStyle } from "./styles/global";
 
 export function App() {
   return (
     <>
-      <Header/>
+      <Header />
+      <Dashboard/>
       <GlobalStyle/>
     </>
   );
