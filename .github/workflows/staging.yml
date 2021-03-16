@@ -4,7 +4,7 @@ on:
   push:
     branches: [ develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ develop ]
 
 jobs:
   build:
@@ -14,8 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
-    with: node-version: 12
+    with: 
+      node-version: 12
     - name: Install Dependencies
       run: yarn
-    - name: Run Build
+    - name: Init Build
       run: yarn build
