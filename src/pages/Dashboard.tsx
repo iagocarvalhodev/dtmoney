@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import { Summary } from '../components/Summary'
+import { TransactionTable } from '../components/TransactionsTable'
 
 export function Dashboard() {
     return (
         <S.Container>
-            <Summary/>
+            <Summary />
+            <TransactionTable/>
         </S.Container>
     )
 }
